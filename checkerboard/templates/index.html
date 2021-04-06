@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+     .box{
+         width: 50px;
+         display: inline-block;
+         height: 50px;
+         background-color: 
+     }
+ </style>
+<body>
+    {% for i in range (times): %}
+        {% for j in range (times): %}
+             {% if (i %2 ==0 and j % 2 ==0) or (i %2 ==1 and j % 2 ==1):  %}
+                <div class="box" style="background-color: black;">
+                    
+                </div>    
+            {% else: %}
+            <div class="box" style="background-color: red;">
+                    
+            </div>   
+            {%endif%}
+            {% endfor %}
+            <br/>
+            {% endfor %}
+     
+</body>
+
+</html>

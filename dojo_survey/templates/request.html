@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Index Page</h1>
+<h3>Create a User</h3>
+    <form action='/users' method='post'>
+    Name: <input type='text' name='name'>
+    
+  <label for="location"></label>Dojo Location
+  <select name="location" id="location">
+    <option>Tirana</option>
+    <option>Durresi</option>
+    <option>Elbasani</option>
+    <option>Shkodra</option>
+  </select>
+  <label for="laguage"></label>language
+  <select name="language" id="language">
+    <option>Python</option>
+    <option>jQuery</option>
+    <option>JavaScript</option>
+    <option>Java</option>
+  </select>
+    Email: <input type='text' name='email'>
+    <input type='submit' value='create user'>
+</form>
+
+</body>
+</html>
